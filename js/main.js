@@ -42,4 +42,4 @@ const finalPriceRounded = (finalPrice).toFixed(2);
 console.log (finalPriceRounded+"$ è il prezzo del tuo biglietto");
 
 // Scrivo nella pagina html il totale dovuto 
-document.getElementById('totalAmount').innerHTML =(finalPriceRounded) +'$';
+document.getElementById('totalAmount').innerHTML =(finalPriceRounded) +' $';
