@@ -3,11 +3,13 @@
 
 #### Il programma dovrà chiedere all’utente il numero di chilometri che vuole percorrere e l’età del passeggero.Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
 #### -il prezzo del biglietto è definito in base ai km (0.21 € al km) 
-#### va applicato uno sconto del 20% per i minorenni
-#### va applicato uno sconto del 40% per gli over 65.
+#### -va applicato uno sconto del 20% per i minorenni
+#### -va applicato uno sconto del 40% per gli over 65.
 #### L’output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
 
 -----------------------------------------------------------------------------------------------------
+
+# ---LOGICA UTILIZZATA---
 
 ```javascript
 //Definiamo una variabile costante:
@@ -46,7 +48,7 @@ let finalPrice
 
 if Number(age) < 18{
 
-    finalPrice = 20% di priceFull ---> minorenni
+    finalPrice = 20% di priceFull //---> minorenni
 
     document.innerHTML //scrivo nell'html
 
@@ -54,7 +56,7 @@ if Number(age) < 18{
 
 else if Number(age) >= 65{
 
-    finalPrice = 40% di priceFull ---> over 65
+    finalPrice = 40% di priceFull //---> over 65
 
     document.innerHTML //scrivo nell'html
 
@@ -62,7 +64,7 @@ else if Number(age) >= 65{
 
 else{
 
-    finalPrice = priceFull ----------> tra 18 e 65 il prezzo non varia
+    finalPrice = priceFull //----------> tra 18 e 64 il prezzo non varia
 
     document.innerHTML //scrivo nell'html
 
@@ -71,10 +73,13 @@ else{
 
 //Stiampiamo il risultato in forma umana e sullo schermo:
 
-const finalPriceRounded = Math.round ((finalPrice + Number.EPSILON)*100)/100;
+const finalPriceRounded = Finalprice arrotondato;
 
 console.log (finalPriceRounded);
 
 document.innerHTML //scrivo nell'html
 
 ```
+
+
+#### Realizzato da Filippo Bonafini
