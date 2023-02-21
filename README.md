@@ -76,3 +76,5 @@ const finalPriceRounded = Math.round ((finalPrice + Number.EPSILON)*100)/100;
 console.log (finalPriceRounded);
 
 scrivo nell'html
+
+```
