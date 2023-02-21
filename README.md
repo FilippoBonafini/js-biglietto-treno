@@ -24,6 +24,12 @@ const km ---------> Km che vuole percorrere il passeggero
 
 
 
+// Scrivo i km a schermo nella pagina html 
+
+document.getElementById(il mio id).innerHTML =(km) +' Km';
+
+
+
 //Definiamo una variabile dove è contenuto il prezzo totale senza sconti:
 
 const priceFull = priceKm * Nuber(km) ---->Trasformiamo in numero la stringa inserita dall'utente
@@ -42,17 +48,23 @@ SE Number(age) < 18{
 
 finalPrice = 20% di priceFull ---> minorenni
 
+scrivo nell'html
+
 }
 
 INVECE SE Number(age) >= 65{
 
 finalPrice = 40% di priceFull ---> over 65
 
+scrivo nell'html
+
 }
 
 ALTRIMENTI{
 
 finalPrice = priceFull ----------> tra 18 e 65 il prezzo non varia
+
+scrivo nell'html
 
 }
 
@@ -62,3 +74,5 @@ finalPrice = priceFull ----------> tra 18 e 65 il prezzo non varia
 const finalPriceRounded = Math.round ((finalPrice + Number.EPSILON)*100)/100;
 
 console.log (finalPriceRounded);
+
+scrivo nell'html
