@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -20,14 +21,14 @@ body{
 
 .-ms-label{
     font-size: 35px;
-    color: rgb(251, 251, 251);
+    color: rgb(240, 240, 240);
     font-weight: bold;
 }
 
 .-ms-screen{
     width: 80vw;
     height: 70vh;
-    background-color: rgb(224, 34, 34);
+    background-color: rgb(201, 92, 92);
     border-radius: 50px;
 }
 
