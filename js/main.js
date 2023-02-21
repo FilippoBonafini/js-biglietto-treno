@@ -5,7 +5,7 @@ const priceKm = 0.21;
 
 // variabili definite dall'utente 
 const age = parseInt(prompt("Quanti anni hai?"));
-const km = parseInt(prompt("Quanti km devi percorrere?"));
+const km = parseFloat(prompt("Quanti km devi percorrere?")).toFixed(2);
 
 // Scrivo i km a schermo nella pagina html 
 document.getElementById('distance').innerHTML =(km) +' Km';
@@ -22,11 +22,11 @@ let finalPrice;
 if (age < 18){
     finalPrice = (priceFull * 0.8);
     // Scrivo il risultato a schermo nella pagina html
-    document.getElementById('discount').innerHTML ='Under 18: -'+(priceFull - finalPrice).toFixed(2) +' $';
+    document.getElementById('discount').innerHTML ='Under 18: '+((priceFull - finalPrice)* -1).toFixed(2) +' $';
 } else if (age >= 65){
     finalPrice = (priceFull * 0.6);
     // Scrivo il risultato a schermo nella pagina html
-    document.getElementById('discount').innerHTML ='Over 65: -'+(priceFull - finalPrice).toFixed(2) +' $';
+    document.getElementById('discount').innerHTML ='Over 65: '+((priceFull - finalPrice)* -1).toFixed(2) +' $';
 } else{
     finalPrice = priceFull
     // Scrivo il risultato a schermo nella pagina html
