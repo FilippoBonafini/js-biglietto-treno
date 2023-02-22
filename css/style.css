@@ -69,3 +69,12 @@ body{
 .-ms-button:active{
     border: none;
 }
+
+@media screen and (max-width:700px){
+    .-ms-button{
+        font-size: 18px;
+    }
+    .-ms-font-bit{
+        font-size: 18px;
+    }
+}
